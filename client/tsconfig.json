@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "moduleResolution": "Bundler",
+    "lib": ["DOM", "ESNext"],
+    "allowJs": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      // FIX: until IDE can autofill yarn link paths
+      "@flop/client/*": ["src/*"]
+    }
+  },
+  "include": [".eslintrc.cjs", "**/*.ts", "**/*.tsx"]
+}
